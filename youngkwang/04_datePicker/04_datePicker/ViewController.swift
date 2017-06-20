@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var labelCurrent: UILabel!
     @IBOutlet weak var labelPickerTime: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +27,8 @@ class ViewController: UIViewController {
         let datePickerView = sender
         let formatter = DateFormatter()
         
-        formatter.dateFormat = "yyyy-mm-dd HH"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
+        labelPickerTime.text = "선택시간: " + formatter.string(from: datePickerView.date)
     }
 
 }
