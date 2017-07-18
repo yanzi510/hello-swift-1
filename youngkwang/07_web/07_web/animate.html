@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>jquery animate</title>
+	<style>
+		#ball {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -25px 0 0 -25px;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: green;
+			text-align: center;
+			line-height: 100px;
+			color: #fff;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<button id="up">Up</button>
+	<button id="down">Down</button>
+	<button id="right">Right</button>
+	<button id="left">Left</button>
+	<div id="ball">Good</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script>
+	var $ball = $("#ball"),
+		distance = 100;
+
+	$("#up").click(function(){
+		$ball.css('background-color', 'pink');
+		$ball.animate({
+			top: '-=' + distance + 'px',
+		}, 200, bgcolor);
+	});
+
+	$("#down").click(function(){
+		$ball.css('background-color', 'pink');
+		$ball.animate({
+			top: '+=' + distance + 'px',
+		}, 200, bgcolor);
+	});
+
+	$("#right").click(function(){
+		$ball.css('background-color', 'pink');
+		$ball.animate({
+			left: '+=' + distance + 'px',
+		}, 200, bgcolor);
+	});
+
+	$("#left").click(function(){
+		$ball.css('background-color', 'pink');
+		$ball.animate({
+			left: '-=' + distance + 'px',
+		}, 200, bgcolor);
+	});
+
+	function bgcolor(){
+		$ball.css('background-color', 'green');
+	}
+</script>
+</body>
+</html>
