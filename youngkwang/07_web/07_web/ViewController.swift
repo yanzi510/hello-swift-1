@@ -40,8 +40,21 @@ class ViewController: UIViewController, UIWebViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
         activityIndicator.stopAnimating()
     }
+    
+    func checkUrl(_ url: String) -> String {
+        var strUrl = url;
+        let flag = strUrl.hasPrefix("http://")
+        
+        if !flag {
+            strUrl = "http://" + strUrl
+        }
+        
+        return strUrl
+    }
 
     @IBAction func buttonGo(_ sender: UIButton) {
+        let url = checkUrl(textUrl.text!)
+        loadWebView(url)
     }
     
     @IBAction func buttonGoSite1(_ sender: UIButton) {
