@@ -27,6 +27,7 @@
 		62674AF41F2897A200F3A7FC /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62674AEA1F2897A200F3A7FC /* 8.jpg */; };
 		62674AF51F2897A200F3A7FC /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62674AEB1F2897A200F3A7FC /* 9.jpg */; };
 		62674AF61F2897A200F3A7FC /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62674AEC1F2897A200F3A7FC /* 10.jpg */; };
+		62674AFA1F289BC000F3A7FC /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62674AF91F289BC000F3A7FC /* UIImagePickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		62674AEA1F2897A200F3A7FC /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		62674AEB1F2897A200F3A7FC /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		62674AEC1F2897A200F3A7FC /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		62674AF91F289BC000F3A7FC /* UIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				62674AC71F288FC800F3A7FC /* AppDelegate.swift */,
 				62674ADD1F28921100F3A7FC /* ImageViewController.swift */,
 				62674ADF1F2893AC00F3A7FC /* DateViewController.swift */,
+				62674AF91F289BC000F3A7FC /* UIImagePickerController.swift */,
 				62674AC91F288FC800F3A7FC /* ViewController.swift */,
 				62674ACB1F288FC800F3A7FC /* Main.storyboard */,
 				62674ACE1F288FC800F3A7FC /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 				62674ACA1F288FC800F3A7FC /* ViewController.swift in Sources */,
 				62674ADE1F28921100F3A7FC /* ImageViewController.swift in Sources */,
 				62674AC81F288FC800F3A7FC /* AppDelegate.swift in Sources */,
+				62674AFA1F289BC000F3A7FC /* UIImagePickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
